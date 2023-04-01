@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require("discord.js");
-const {joinVoiceChannel } = require("@discordjs/voice");
+const {joinVoiceChannel,createAudioPlayer } = require("@discordjs/voice");
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -12,6 +12,8 @@ module.exports = {
       guildId: channel.guild.id,
       adapterCreator: channel.guild.voiceAdapterCreator,
     });
-    if (connection.state!== "CONNECTED") {interaction.reply('Gejoint')} {
+
+    if (connection.state!== "CONNECTED") {
+      interaction.reply('Gejoint')} {
   }
 }}
