@@ -1,7 +1,8 @@
 [package]
-name = "DJ-Linda"
+name = "dj_linda"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-discord = "0.8.1"
+poise = "0.6.1"
+tokio = {version="1.40.0", features=["rt-multi-thread"]}
